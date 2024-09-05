@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main" class="flex">
+      <div id="leftsec" class="hidden lg:flex flex-col justify-between pl-10 bg-black" style="width: 20%; position: sticky; top: 0; height: calc(100vh - 80px);">
+        <div class="mt-4">
+            <img class="w-28" src="./images/Spotify logo.png" alt="">
+        </div>
+        <div class="flex flex-col">
+            <a href="" class="mb-3 text-white"><i class="fa-solid fa-house mr-3"></i>Home</a>
+            <a href="" class="mb-3 text-white"><i class="fa-solid fa-magnifying-glass mr-3"></i>Search</a>
+            <a href="" class="mb-3 text-white"><i class="fa-solid fa-bars mr-3"></i>YourLibrary</a>
+        </div>
+        <div class="flex flex-col">
+            <a href="" class="mb-3 text-white"><img src="./images/liked.png" alt="" class="inline-block mr-3">Liked Songs</a>
+            <a href="" class="mb-3 text-white"><img src="./images/addp.png" alt="" class="inline-block mr-3">Create Playlist</a>
+            <a href="" class="mb-3 text-white"><img src="./images/Episode.png" alt="" class="inline-block mr-3">Your Episodes</a>
+        </div>
+        <div class="flex flex-col">
+            <a href="" class="mb-3 text-white">FAV</a>
+            <a href="" class="mb-3 text-white">Daily Mix 1</a>
+            <a href="" class="mb-3 text-white">Discover Weekly</a>
+            <a href="" class="mb-3 text-white">Malayalam</a>
+            <a href="" class="mb-3 text-white">Dance / Electronix Mix</a>
+            <a href="" class="mb-3 text-white">EDM / Popular</a>
+        </div>
+    </div>
+        <div id="section" class="md:w-screen sm:w-screen px-5 pt-5 w-4/5" style="padding-bottom: 100px;">
+            <div class="flex justify-between mb-6">
+                <div>
+                    <a href="" class="text-white"><i class="fa-solid fa-circle-chevron-left fa-2xl w-8"></i></a>
+                    <a href="" class="text-white"><i class="fa-solid fa-circle-chevron-right fa-2xl"></i></a>
+                </div>
+                <div class="flex items-center text-white bg-black rounded-full pr-2">
+                    <img src="./images/profile.png" alt="" class="h-8 w-8 rounded-full mr-2">
+                    <span>Angel</span>
+                    <i class="fa-solid fa-caret-down" style="color: #ffffff; margin-left: 5px;"></i>
+                </div>
+            </div>
+            <div>
+              <h2 class="text-white text-lg md:text-xl font-medium mb-2">Good morning</h2>
+              <div class="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-6">
+                <a href="" class="block hover-shadow">
+                    <div class="flex items-center text-white font-medium text-sm md:text-base bg-slate-800 rounded p-2 transition-transform">
+                        <img src="./images/liked1.png" alt="" class="mr-2 h-8 w-8 md:h-10 md:w-10">
+                        Liked Songs
+                    </div>
+                </a>
+                <a href="" class="block hover-shadow">
+                    <div class="flex items-center text-white font-medium text-sm md:text-base bg-slate-800 rounded p-2 transition-transform">
+                        <img src="./images/playlist1.png" alt="" class="mr-2 h-8 w-8 md:h-10 md:w-10">
+                        Neffex Playlist
+                    </div>
+                </a>
+                <a href="" class="block hover-shadow">
+                    <div class="flex items-center text-white font-medium text-sm md:text-base bg-slate-800 rounded p-2 transition-transform">
+                        <img src="./images/Rectangle 2.jpg" alt="" class="mr-2 h-8 w-8 md:h-10 md:w-10">
+                        K/ DA
+                    </div>
+                </a>
+                <a href="" class="block hover-shadow">
+                    <div class="flex items-center text-white font-medium text-sm md:text-base bg-slate-800 rounded p-2 transition-transform">
+                        <img src="./images/playlist3.png" alt="" class="mr-2 h-8 w-8 md:h-10 md:w-10">
+                        Liked Songs
+                    </div>
+                </a>
+                <a href="" class="block hover-shadow">
+                    <div class="flex items-center text-white font-medium text-sm md:text-base bg-slate-800 rounded p-2 transition-transform">
+                        <img src="./images/playlist4.jpg" alt="" class="mr-2 h-8 w-8 md:h-10 md:w-10">
+                        Dance / Electronic Mix
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-2">
+                <h2 class="text-white text-lg font-medium">Show you might like</h2>
+                <a href="" class="text-white hover:text-green-400 hover:underline transition-colors duration-300">Show more</a>
+            </div>
+            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 mb-6">
+                <div id="cards" class="w-full rounded overflow-hidden bg-blue-700 p-2 transition-transform transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/50">
+                    <img class="w-full rounded-full transition-transform transform hover:scale-105" src="./images/like1.png" alt="Sunset in the mountains">
+                    <div class="px-4 py-2">
+                        <div class="font-bold mb-1 text-white text-sm sm:text-base hover:text-green-400">Weekly motivation</div>
+                        <p class="text-slate-400 text-xs sm:text-sm">Ben Ina Scott</p>
+                    </div>
+                </div>
+                <div id="cards" class="w-full rounded overflow-hidden bg-blue-700 p-2 transition-transform transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/50">
+                    <img class="w-full rounded-full transition-transform transform hover:scale-105" src="./images/like2.png" alt="Sunset in the mountains">
+                    <div class="px-4 py-2">
+                        <div class="font-bold mb-1 text-white text-sm sm:text-base hover:text-green-400">MEDITATION SELF</div>
+                        <p class="text-slate-400 text-xs sm:text-sm">Ibn Hussain Aleen</p>
+                    </div>
+                </div>
+                <div id="cards" class="w-full rounded overflow-hidden bg-blue-700 p-2 transition-transform transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/50">
+                    <img class="w-full rounded-full transition-transform transform hover:scale-105" src="./images/llike3.png" alt="Sunset in the mountains">
+                    <div class="px-4 py-2">
+                        <div class="font-bold mb-1 text-white text-sm sm:text-base hover:text-green-400">Words beyond</div>
+                        <p class="text-slate-400 text-xs sm:text-sm">Samuel Scott</p>
+                    </div>
+                </div>
+                <div id="cards" class="w-full rounded overflow-hidden bg-blue-700 p-2 transition-transform transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/50">
+                    <img class="w-full rounded-full transition-transform transform hover:scale-105" src="./images/like4.png" alt="Sunset in the mountains">
+                    <div class="px-4 py-2">
+                        <div class="font-bold mb-1 text-white text-sm sm:text-base hover:text-green-400">The Alexa Show</div>
+                        <p class="text-slate-400 text-xs sm:text-sm">Adriana Tom</p>
+                    </div>
+                </div>
+                <div id="cards" class="w-full rounded overflow-hidden bg-blue-700 p-2 transition-transform transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/50">
+                    <img class="w-full rounded-full transition-transform transform hover:scale-105" src="./images/like5.png" alt="Sunset in the mountains">
+                    <div class="px-4 py-2">
+                        <div class="font-bold mb-1 text-white text-sm sm:text-base hover:text-green-400">The Stories</div>
+                        <p class="text-slate-400 text-xs sm:text-sm">Lexus</p>
+                    </div>
+                </div>
+                <div id="cards" class="w-full rounded overflow-hidden bg-blue-700 p-2 transition-transform transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/50">
+                    <img class="w-full rounded-full transition-transform transform hover:scale-105" src="./images/like6.png" alt="Sunset in the mountains">
+                    <div class="px-4 py-2">
+                        <div class="font-bold mb-1 text-white text-sm sm:text-base hover:text-green-400">Motivation Daily</div>
+                        <p class="text-slate-400 text-xs sm:text-sm">Georgina Martha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h2 class="text-white text-lg font-medium">Popular artists</h2><a href="" class="text-white">Show more</a>
+            </div>
+            <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mb-6">
+              <div class="w-full rounded overflow-hidden p-2 transition-transform transform hover:scale-105 hover:shadow-lg">
+                  <div class="relative">
+                      <img class="w-full rounded-full" src="https://i.pinimg.com/236x/57/01/57/5701574a72c3c4be9e73c30787e54dae.jpg" alt="Sunset in the mountains">
+                      <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 transition-opacity"></div>
+                  </div>
+                  <div class="px-4 py-2">
+                      <div class="font-bold mb-1 text-white text-sm sm:text-base">Weekend</div>
+                      <p class="text-slate-400 text-xs sm:text-sm">Artist</p>
+                  </div>
+              </div>                
+              <div class="w-full rounded overflow-hidden p-2 transition-transform transform hover:scale-105 hover:shadow-lg">
+                  <div class="relative">
+                      <img class="w-full rounded-full" src="https://i.pinimg.com/236x/36/fa/6c/36fa6ca697334d32574637d2ed99cdd0.jpg" alt="Sunset in the mountains">
+                      <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 transition-opacity"></div>
+                  </div>
+                  <div class="px-4 py-2">
+                      <div class="font-bold mb-1 text-white text-sm sm:text-base">Trais Scott</div>
+                      <p class="text-slate-400 text-xs sm:text-sm">Artist</p>
+                  </div>
+              </div>
+              <div class="w-full rounded overflow-hidden p-2 transition-transform transform hover:scale-105 hover:shadow-lg">
+                  <div class="relative">
+                      <img class="w-full rounded-full" src="https://i.pinimg.com/236x/8e/af/86/8eaf86637520fa44ded2f430e7e47074.jpg" alt="Sunset in the mountains">
+                      <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 transition-opacity"></div>
+                  </div>
+                  <div class="px-4 py-2">
+                      <div class="font-bold mb-1 text-white text-sm sm:text-base">Zayn Malik</div>
+                      <p class="text-slate-400 text-xs sm:text-sm">Artist</p>
+                  </div>
+              </div>
+              <div class="w-full rounded overflow-hidden p-2 transition-transform transform hover:scale-105 hover:shadow-lg">
+                  <div class="relative">
+                      <img class="w-full rounded-full" src="https://i.pinimg.com/236x/87/4d/1f/874d1f3dea7883af17cd43282cc7fa3b.jpg" alt="Sunset in the mountains">
+                      <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 transition-opacity"></div>
+                  </div>
+                  <div class="px-4 py-2">
+                      <div class="font-bold mb-1 text-white text-sm sm:text-base">Arjith Singh</div>
+                      <p class="text-slate-400 text-xs sm:text-sm">Artist</p>
+                  </div>
+              </div>
+              <div class="w-full rounded overflow-hidden p-2 transition-transform transform hover:scale-105 hover:shadow-lg">
+                  <div class="relative">
+                      <img class="w-full rounded-full" src="https://i.pinimg.com/236x/d9/f4/6a/d9f46af0dbe6b49d16f4e70b119e7181.jpg" alt="Sunset in the mountains">
+                      <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 transition-opacity"></div>
+                  </div>
+                  <div class="px-4 py-2">
+                      <div class="font-bold mb-1 text-white text-sm sm:text-base">A.R Rahman</div>
+                      <p class="text-slate-400 text-xs sm:text-sm">Artist</p>
+                  </div>
+              </div>
+              <div class="w-full rounded overflow-hidden p-2 transition-transform transform hover:scale-105 hover:shadow-lg">
+                  <div class="relative">
+                      <img class="w-full rounded-full" src="https://i.pinimg.com/236x/87/54/08/875408676330ad004aff701e9b2dd521.jpg" alt="Sunset in the mountains">
+                      <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 transition-opacity"></div>
+                  </div>
+                  <div class="px-4 py-2">
+                      <div class="font-bold mb-1 text-white text-sm sm:text-base">Post Malone</div>
+                      <p class="text-slate-400 text-xs sm:text-sm">Artist</p>
+                  </div>
+              </div>
+          </div>
+            </div>
+            <div>
+              <footer>
+<div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+            <a href="" class="flex items-center mt-4">
+                <img src="./images/Spotify logo.png" class="h-8 me-3" alt="FlowBite Logo" />
+            </a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-2">
+                        <a href="https://flowbite.com/" class="hover:underline">About</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://tailwindcss.com/" class="hover:underline">Jobs</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="https://tailwindcss.com/" class="hover:underline">For the Record</a>
+                  </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Communities</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-2">
+                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">For Artists</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Developers</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Advertising</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Investors</a>
+                </li>
+                <li class="mb-2">
+                  <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Vendors</a>
+              </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">Spotify™</a>. All Rights Reserved.
+        </span>
+        <div class="flex mt-4 sm:justify-center sm:mt-0">
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                      <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                  </svg>
+                <span class="sr-only">Facebook page</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                      <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                  </svg>
+                <span class="sr-only">Discord community</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                  <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+              </svg>
+                <span class="sr-only">Twitter page</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                </svg>
+                <span class="sr-only">GitHub account</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+              </svg>
+                <span class="sr-only">Dribbble account</span>
+            </a>
+        </div>
+    </div>
+  </div>
+</footer>
+            </div>
+            <div id="musicplayer"class="flex justify-between items-center w-full bg-black py-2 px-2 fixed bottom-0 left-0 z-50 shadow-above">
+              <div class="flex items-center">
+                  <img class="w-16" src="https://i.pinimg.com/236x/b9/1c/23/b91c23847b52569c523fa6d874b3ee59.jpg" alt="">
+                  <div class="ml-4">
+                      <h3 class="text-white">Dreaming On</h3>
+                      <p class="text-gray-400">NEFFEX</p> 
+                  </div>
+                  <img src="./images/greenheart.png" alt="" class="ml-4">
+              </div>
+              <div>
+                  <div class="flex justify-center items-center mb-2">
+                      <a href="" class="mr-4"><img src="./images/shuffle.png" alt=""></a>
+                      <a href="" class="mr-4"><img src="./images/backwards.png" alt=""></a>
+                      <a href="" class="mr-4"><img src="./images/playicon.png" alt=""></a>
+                      <a href="" class="mr-4"><img src="./images/next.png" alt=""></a>
+                      <a href=""><img src="./images/repeat.png" alt=""></a>
+                  </div>
+                  <div class="flex items-center justify-center">
+                      <p class="mr-2 text-white">2:24</p>
+                      <div class="relative w-96 h-1 bg-gray-800">
+                          <div class="absolute top-0 left-0 h-full bg-white" style="width: 80%;"></div>
+                      </div>
+                      <p class="ml-2 text-white">2:42</p>
+                  </div>
+              </div>
+          
+              <div class="flex items-center">
+                  <a href="" class="mr-4"><img src="./images/mic.png" alt=""></a>
+                  <a href="" class="mr-4"><img src="./images/shuffle.png" alt=""></a>
+                  <a href="" class="mr-4"><img src="./images/laptop.png" alt=""></a>
+                  <a href="" class="mr-4"><img src="./images/speaker.png" alt=""></a>
+                  <a href="" class="mr-4"><img src="./images/volumebar.png" alt=""></a>
+                  <a href=""><img src="./images/volumedown.png" alt=""></a>
+              </div>
+          </div>
+        </div>
+    </div>
+    
+</body>
+</html>
